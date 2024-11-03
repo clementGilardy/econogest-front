@@ -2,7 +2,13 @@
   "name": "@econogest-front/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:front": "nx serve econogest-front",
+    "build:prod": "nx build econogest-front",
+    "test:econogest": "nx test econogest-front --watch",
+    "test:transactions": "nx test transactions --watch",
+    "test:dashboard": "nx test dashboard --watch"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.2.0",
@@ -23,6 +29,7 @@
     "@angular/cli": "~18.2.0",
     "@angular/compiler-cli": "~18.2.0",
     "@angular/language-service": "~18.2.0",
+    "@cypress/webpack-dev-server": "^3.8.0",
     "@eslint/js": "^9.8.0",
     "@nx/angular": "20.0.7",
     "@nx/cypress": "20.0.7",
@@ -44,6 +51,7 @@
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-cypress": "^3.5.0",
+    "html-webpack-plugin": "^5.5.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "jest-preset-angular": "~14.1.0",
