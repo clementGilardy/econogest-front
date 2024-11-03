@@ -5,9 +5,12 @@
   "scripts": {
     "start:front": "nx serve econogest-front",
     "build:prod": "nx build econogest-front",
-    "test:econogest": "nx test econogest-front --watch",
-    "test:transactions": "nx test transactions --watch",
-    "test:dashboard": "nx test dashboard --watch"
+    "prettier:check": "prettier . -c",
+    "prettier:write": "prettier . -w",
+    "test:econogest": "nx test econogest-front",
+    "test:transactions": "nx test transactions",
+    "test:component:transactions": "nx component-test transactions",
+    "test:dashboard": "nx test dashboard"
   },
   "private": true,
   "dependencies": {
