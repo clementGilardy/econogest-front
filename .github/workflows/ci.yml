@@ -3,15 +3,13 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - develop
   pull_request:
-
-permissions:
-  actions: read
-  contents: read
+    branches:
+      - develop
 
 jobs:
-  main:
+  linter:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
