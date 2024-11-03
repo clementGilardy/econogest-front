@@ -27,6 +27,8 @@
     "@angular-devkit/core": "~18.2.0",
     "@angular-devkit/schematics": "~18.2.0",
     "@angular/cli": "~18.2.0",
+    "@angular/material": "~18.2.11",
+    "@angular/cdk": "~18.2.11",
     "@angular/compiler-cli": "~18.2.0",
     "@angular/language-service": "~18.2.0",
     "@cypress/webpack-dev-server": "^3.8.0",
