@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TransactionFormComponent } from './transaction-form.component';
 import { FormGroup } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('TransactionFormComponent', () => {
   let component: TransactionFormComponent;
@@ -9,7 +10,7 @@ describe('TransactionFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TransactionFormComponent],
+      imports: [TransactionFormComponent, BrowserAnimationsModule],
     }).compileComponents();
 
     fixture = TestBed.createComponent(TransactionFormComponent);
