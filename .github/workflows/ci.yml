@@ -11,6 +11,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      NX_NO_CLOUD: true
     strategy:
       matrix:
         node-version:
